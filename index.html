@@ -14,12 +14,27 @@ body{
 }
   */
 /*https://www.freecodecamp.org/news/css-full-page-background-image-tutorial/*/
-html {
+/*
+  html {
    min-height: 100%;
    background-image: url("photo-1480714378408-67cf0d13bc1b.jpg");
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
+}
+  */
+  
+/* video background */
+#background-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
   
 .container{
@@ -96,6 +111,10 @@ html {
 </style>
 </head>
 <body>
+<video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+  <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+</video>
+
   <div class="navbar">
     <div class="container">
     <div class="logo_div">
